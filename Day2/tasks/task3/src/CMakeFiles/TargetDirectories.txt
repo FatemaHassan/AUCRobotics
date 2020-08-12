@@ -1,0 +1,3 @@
+/home/fatema/Documents/tasks/sample/CMakeFiles/rebuild_cache.dir
+/home/fatema/Documents/tasks/sample/CMakeFiles/sample.dir
+/home/fatema/Documents/tasks/sample/CMakeFiles/edit_cache.dir
