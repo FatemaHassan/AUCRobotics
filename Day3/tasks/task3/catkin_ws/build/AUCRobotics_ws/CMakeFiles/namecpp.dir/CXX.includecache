@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fatema/Documents/AUCRobotics/Day3/tasks/task3/catkin_ws/src/AUCRobotics_ws/src/namecpp.cpp
+iostream
+-
+
