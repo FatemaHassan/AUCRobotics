@@ -131,6 +131,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/fatema/Documents/AUCRobotics/Day3/tasks/task3/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/fatema/Documents/AUCRobotics/Day3/tasks/task3/catkin_ws/build/src/my_robot/cmake_install.cmake")
+  include("/home/fatema/Documents/AUCRobotics/Day3/tasks/task3/catkin_ws/build/src/ball_chaser/cmake_install.cmake")
   include("/home/fatema/Documents/AUCRobotics/Day3/tasks/task3/catkin_ws/build/AUCRobotics_ws/cmake_install.cmake")
 
 endif()

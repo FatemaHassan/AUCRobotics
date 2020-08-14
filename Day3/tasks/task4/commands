@@ -1,0 +1,10 @@
+after git clone and fixing CMakelists
+
+catkin_make
+
+source devel/setup.bash
+
+roslaunch my_robot world.launch
+
+
+

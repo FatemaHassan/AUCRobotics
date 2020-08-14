@@ -1,0 +1,28 @@
+Commands used:
+rosdep update
+~/Documents/AUCRobotics/Day3/tasks$ mkdir task3 
+mkdir catkin_ws
+cd catkin_ws/
+mkdir src
+cd ..
+catkin_make
+source devel/setup.bash 
+catkin_create_pkg AUCRobotics_ws rospy roscpp std_msgs sensor_msgs
+nano package.xml 
+
+//after moving python and c++ files to the ~/Documents/AUCRobotics/Day3/tasks/task3/catkin_ws/src/AUCRobotics_ws/src 
+
+chmod +x name.py
+rosrun AUCRobotics_ws name.py 
+
+//after fixing the CMakelists file
+rosrun AUCRobotics_ws namecpp
+
+git clone https://github.com/khaledgabr77/AUC-Robotics-Summer-Camp.git
+rm -r devel build
+
+//moved the packages in src to the current workspace then
+catkin_make
+
+
+

@@ -1,0 +1,2 @@
+src/ball_chaser:src/my_robot
+-DCATKIN_DEVEL_PREFIX=/home/fatema/Documents/AUCRobotics/Day3/tasks/task4/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/fatema/Documents/AUCRobotics/Day3/tasks/task4/catkin_ws/install -G Unix Makefiles
