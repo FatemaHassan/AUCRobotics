@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named pubAndSub
+
+# Build rule for target.
+pubAndSub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pubAndSub
+.PHONY : pubAndSub
+
+# fast build rule for target.
+pubAndSub/fast:
+	$(MAKE) -f pkg/CMakeFiles/pubAndSub.dir/build.make pkg/CMakeFiles/pubAndSub.dir/build
+.PHONY : pubAndSub/fast
+
+#=============================================================================
 # Target rules for targets named complexListener
 
 # Build rule for target.
@@ -787,6 +800,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... pubAndSub"
 	@echo "... complexListener"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"

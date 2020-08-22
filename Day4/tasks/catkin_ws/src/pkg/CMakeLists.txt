@@ -230,4 +230,8 @@ add_executable(complexListener src/complexListener.cpp)
 target_link_libraries(complexListener ${catkin_LIBRARIES})
 add_dependencies(complexListener pkg_generate_messages_cpp)
 
+add_executable(pubAndSub src/pubAndSub.cpp)
+target_link_libraries(pubAndSub ${catkin_LIBRARIES})
+add_dependencies(pubAndSub pkg_generate_messages_cpp)
+
 

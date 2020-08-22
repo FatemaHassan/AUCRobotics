@@ -408,6 +408,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory pkg
 
 # Convenience name for "all" pass in the directory.
+pkg/all: pkg/CMakeFiles/pubAndSub.dir/all
 pkg/all: pkg/CMakeFiles/complexListener.dir/all
 pkg/all: pkg/CMakeFiles/wordCountServer.dir/all
 pkg/all: pkg/CMakeFiles/pkg_generate_messages.dir/all
@@ -419,6 +420,7 @@ pkg/all: pkg/CMakeFiles/complexTalker.dir/all
 .PHONY : pkg/all
 
 # Convenience name for "clean" pass in the directory.
+pkg/clean: pkg/CMakeFiles/pubAndSub.dir/clean
 pkg/clean: pkg/CMakeFiles/complexListener.dir/clean
 pkg/clean: pkg/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 pkg/clean: pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
@@ -463,6 +465,43 @@ pkg/clean: pkg/CMakeFiles/complexTalker.dir/clean
 pkg/preinstall:
 
 .PHONY : pkg/preinstall
+
+#=============================================================================
+# Target rules for target pkg/CMakeFiles/pubAndSub.dir
+
+# All Build rule for target.
+pkg/CMakeFiles/pubAndSub.dir/all: pkg/CMakeFiles/pkg_generate_messages_cpp.dir/all
+	$(MAKE) -f pkg/CMakeFiles/pubAndSub.dir/build.make pkg/CMakeFiles/pubAndSub.dir/depend
+	$(MAKE) -f pkg/CMakeFiles/pubAndSub.dir/build.make pkg/CMakeFiles/pubAndSub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=41,42 "Built target pubAndSub"
+.PHONY : pkg/CMakeFiles/pubAndSub.dir/all
+
+# Include target in all.
+all: pkg/CMakeFiles/pubAndSub.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+pkg/CMakeFiles/pubAndSub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/pubAndSub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles 0
+.PHONY : pkg/CMakeFiles/pubAndSub.dir/rule
+
+# Convenience name for target.
+pubAndSub: pkg/CMakeFiles/pubAndSub.dir/rule
+
+.PHONY : pubAndSub
+
+# clean rule for target.
+pkg/CMakeFiles/pubAndSub.dir/clean:
+	$(MAKE) -f pkg/CMakeFiles/pubAndSub.dir/build.make pkg/CMakeFiles/pubAndSub.dir/clean
+.PHONY : pkg/CMakeFiles/pubAndSub.dir/clean
+
+# clean rule for target.
+clean: pkg/CMakeFiles/pubAndSub.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target pkg/CMakeFiles/complexListener.dir
@@ -828,7 +867,7 @@ clean: pkg/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 pkg/CMakeFiles/wordCountServer.dir/all: pkg/CMakeFiles/pkg_gencpp.dir/all
 	$(MAKE) -f pkg/CMakeFiles/wordCountServer.dir/build.make pkg/CMakeFiles/wordCountServer.dir/depend
 	$(MAKE) -f pkg/CMakeFiles/wordCountServer.dir/build.make pkg/CMakeFiles/wordCountServer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=45,46 "Built target wordCountServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=47,48 "Built target wordCountServer"
 .PHONY : pkg/CMakeFiles/wordCountServer.dir/all
 
 # Include target in all.
@@ -1330,7 +1369,7 @@ clean: pkg/CMakeFiles/_pkg_generate_messages_check_deps_msgs.dir/clean
 pkg/CMakeFiles/talker.dir/all: pkg/CMakeFiles/pkg_generate_messages_cpp.dir/all
 	$(MAKE) -f pkg/CMakeFiles/talker.dir/build.make pkg/CMakeFiles/talker.dir/depend
 	$(MAKE) -f pkg/CMakeFiles/talker.dir/build.make pkg/CMakeFiles/talker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=41,42 "Built target talker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=43,44 "Built target talker"
 .PHONY : pkg/CMakeFiles/talker.dir/all
 
 # Include target in all.
@@ -1540,7 +1579,7 @@ clean: pkg/CMakeFiles/listener.dir/clean
 pkg/CMakeFiles/wordCountClient.dir/all: pkg/CMakeFiles/pkg_gencpp.dir/all
 	$(MAKE) -f pkg/CMakeFiles/wordCountClient.dir/build.make pkg/CMakeFiles/wordCountClient.dir/depend
 	$(MAKE) -f pkg/CMakeFiles/wordCountClient.dir/build.make pkg/CMakeFiles/wordCountClient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=43,44 "Built target wordCountClient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=45,46 "Built target wordCountClient"
 .PHONY : pkg/CMakeFiles/wordCountClient.dir/all
 
 # Include target in all.

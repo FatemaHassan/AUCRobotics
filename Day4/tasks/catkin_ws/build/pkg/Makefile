@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+pkg/CMakeFiles/pubAndSub.dir/rule:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/pubAndSub.dir/rule
+.PHONY : pkg/CMakeFiles/pubAndSub.dir/rule
+
+# Convenience name for target.
+pubAndSub: pkg/CMakeFiles/pubAndSub.dir/rule
+
+.PHONY : pubAndSub
+
+# fast build rule for target.
+pubAndSub/fast:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/pubAndSub.dir/build.make pkg/CMakeFiles/pubAndSub.dir/build
+.PHONY : pubAndSub/fast
+
+# Convenience name for target.
 pkg/CMakeFiles/complexListener.dir/rule:
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/complexListener.dir/rule
 .PHONY : pkg/CMakeFiles/complexListener.dir/rule
@@ -803,6 +818,33 @@ src/listener.cpp.s:
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/listener.dir/build.make pkg/CMakeFiles/listener.dir/src/listener.cpp.s
 .PHONY : src/listener.cpp.s
 
+src/pubAndSub.o: src/pubAndSub.cpp.o
+
+.PHONY : src/pubAndSub.o
+
+# target to build an object file
+src/pubAndSub.cpp.o:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/pubAndSub.dir/build.make pkg/CMakeFiles/pubAndSub.dir/src/pubAndSub.cpp.o
+.PHONY : src/pubAndSub.cpp.o
+
+src/pubAndSub.i: src/pubAndSub.cpp.i
+
+.PHONY : src/pubAndSub.i
+
+# target to preprocess a source file
+src/pubAndSub.cpp.i:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/pubAndSub.dir/build.make pkg/CMakeFiles/pubAndSub.dir/src/pubAndSub.cpp.i
+.PHONY : src/pubAndSub.cpp.i
+
+src/pubAndSub.s: src/pubAndSub.cpp.s
+
+.PHONY : src/pubAndSub.s
+
+# target to generate assembly for a file
+src/pubAndSub.cpp.s:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/pubAndSub.dir/build.make pkg/CMakeFiles/pubAndSub.dir/src/pubAndSub.cpp.s
+.PHONY : src/pubAndSub.cpp.s
+
 src/talker.o: src/talker.cpp.o
 
 .PHONY : src/talker.o
@@ -896,6 +938,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... pubAndSub"
 	@echo "... complexListener"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
@@ -943,6 +986,9 @@ help:
 	@echo "... src/listener.o"
 	@echo "... src/listener.i"
 	@echo "... src/listener.s"
+	@echo "... src/pubAndSub.o"
+	@echo "... src/pubAndSub.i"
+	@echo "... src/pubAndSub.s"
 	@echo "... src/talker.o"
 	@echo "... src/talker.i"
 	@echo "... src/talker.s"
