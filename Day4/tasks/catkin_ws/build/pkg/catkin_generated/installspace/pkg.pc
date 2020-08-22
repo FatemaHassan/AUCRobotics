@@ -1,0 +1,8 @@
+prefix=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/install
+
+Name: pkg
+Description: Description of pkg
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 
