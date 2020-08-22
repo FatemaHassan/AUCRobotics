@@ -58,7 +58,7 @@ add_message_files(
 add_service_files(
    FILES
    servs.srv
-#   Service2.srv
+   wordCount.srv
 )
 
 ## Generate actions in the 'action' folder
@@ -213,3 +213,11 @@ add_dependencies(talker pkg_generate_messages_cpp)
 add_executable(listener src/listener.cpp)
 target_link_libraries(listener ${catkin_LIBRARIES})
 add_dependencies(listener pkg_generate_messages_cpp)
+
+add_executable(wordCountServer src/wordCountServer.cpp)
+target_link_libraries(wordCountServer ${catkin_LIBRARIES})
+add_dependencies(wordCountServer pkg_gencpp)
+ 
+add_executable(wordCountClient src/wordCountClient.cpp)
+target_link_libraries(wordCountClient ${catkin_LIBRARIES})
+add_dependencies(wordCountClient pkg_gencpp)

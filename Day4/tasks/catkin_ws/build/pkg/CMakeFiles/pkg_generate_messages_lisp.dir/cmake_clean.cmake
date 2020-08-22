@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pkg_generate_messages_lisp"
   "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/common-lisp/ros/pkg/msg/msgs.lisp"
+  "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/common-lisp/ros/pkg/srv/wordCount.lisp"
   "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/common-lisp/ros/pkg/srv/servs.lisp"
 )
 

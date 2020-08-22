@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg/msgs.msg"
-services_str = "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/servs.srv"
+services_str = "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/servs.srv;/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/wordCount.srv"
 pkg_name = "pkg"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

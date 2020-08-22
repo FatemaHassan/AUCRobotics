@@ -42,7 +42,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pkg/srv" TYPE FILE FILES "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/servs.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pkg/srv" TYPE FILE FILES
+    "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/servs.srv"
+    "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/wordCount.srv"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

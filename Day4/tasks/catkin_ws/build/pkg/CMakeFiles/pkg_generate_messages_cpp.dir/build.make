@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build
 include pkg/CMakeFiles/pkg_generate_messages_cpp.dir/progress.make
 
 pkg/CMakeFiles/pkg_generate_messages_cpp: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg/msgs.h
+pkg/CMakeFiles/pkg_generate_messages_cpp: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg/wordCount.h
 pkg/CMakeFiles/pkg_generate_messages_cpp: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg/servs.h
 
 
@@ -63,15 +64,23 @@ pkg/CMakeFiles/pkg_generate_messages_cpp: /home/fatema/Documents/AUCRobotics/Day
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from pkg/msgs.msg"
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg && /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg/msgs.msg -Ipkg:/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pkg -o /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg -e /opt/ros/melodic/share/gencpp/cmake/..
 
+/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg/wordCount.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg/wordCount.h: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/wordCount.srv
+/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg/wordCount.h: /opt/ros/melodic/share/gencpp/msg.h.template
+/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg/wordCount.h: /opt/ros/melodic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from pkg/wordCount.srv"
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg && /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/wordCount.srv -Ipkg:/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pkg -o /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg -e /opt/ros/melodic/share/gencpp/cmake/..
+
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg/servs.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg/servs.h: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/servs.srv
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg/servs.h: /opt/ros/melodic/share/gencpp/msg.h.template
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg/servs.h: /opt/ros/melodic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from pkg/servs.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from pkg/servs.srv"
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg && /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/servs.srv -Ipkg:/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pkg -o /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg -e /opt/ros/melodic/share/gencpp/cmake/..
 
 pkg_generate_messages_cpp: pkg/CMakeFiles/pkg_generate_messages_cpp
 pkg_generate_messages_cpp: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg/msgs.h
+pkg_generate_messages_cpp: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg/wordCount.h
 pkg_generate_messages_cpp: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/include/pkg/servs.h
 pkg_generate_messages_cpp: pkg/CMakeFiles/pkg_generate_messages_cpp.dir/build.make
 

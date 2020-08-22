@@ -11,5 +11,6 @@ export CMAKE_PREFIX_PATH="/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_w
 export LD_LIBRARY_PATH="/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build'
+export PYTHONPATH="/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES='/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/common-lisp'
 export ROS_PACKAGE_PATH="/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src:$ROS_PACKAGE_PATH"

@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build
 include pkg/CMakeFiles/pkg_generate_messages_py.dir/progress.make
 
 pkg/CMakeFiles/pkg_generate_messages_py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/msg/_msgs.py
+pkg/CMakeFiles/pkg_generate_messages_py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/_wordCount.py
 pkg/CMakeFiles/pkg_generate_messages_py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/_servs.py
 pkg/CMakeFiles/pkg_generate_messages_py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/msg/__init__.py
 pkg/CMakeFiles/pkg_generate_messages_py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/__init__.py
@@ -64,25 +65,33 @@ pkg/CMakeFiles/pkg_generate_messages_py: /home/fatema/Documents/AUCRobotics/Day4
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG pkg/msgs"
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg/msgs.msg -Ipkg:/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pkg -o /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/msg
 
+/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/_wordCount.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/_wordCount.py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/wordCount.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV pkg/wordCount"
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/wordCount.srv -Ipkg:/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pkg -o /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv
+
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/_servs.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/_servs.py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/servs.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV pkg/servs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python code from SRV pkg/servs"
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/servs.srv -Ipkg:/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pkg -o /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv
 
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/msg/__init__.py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/msg/_msgs.py
+/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/msg/__init__.py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/_wordCount.py
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/msg/__init__.py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/_servs.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for pkg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for pkg"
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/msg --initpy
 
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/__init__.py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/msg/_msgs.py
+/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/__init__.py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/_wordCount.py
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/__init__.py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/_servs.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for pkg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python srv __init__.py for pkg"
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv --initpy
 
 pkg_generate_messages_py: pkg/CMakeFiles/pkg_generate_messages_py
 pkg_generate_messages_py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/msg/_msgs.py
+pkg_generate_messages_py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/_wordCount.py
 pkg_generate_messages_py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/_servs.py
 pkg_generate_messages_py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/msg/__init__.py
 pkg_generate_messages_py: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/lib/python2.7/dist-packages/pkg/srv/__init__.py

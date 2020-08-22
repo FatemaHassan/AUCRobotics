@@ -92,17 +92,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -112,17 +101,6 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -134,6 +112,28 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -318,6 +318,21 @@ rosgraph_msgs_generate_messages_eus/fast:
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
+pkg/CMakeFiles/wordCountServer.dir/rule:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/wordCountServer.dir/rule
+.PHONY : pkg/CMakeFiles/wordCountServer.dir/rule
+
+# Convenience name for target.
+wordCountServer: pkg/CMakeFiles/wordCountServer.dir/rule
+
+.PHONY : wordCountServer
+
+# fast build rule for target.
+wordCountServer/fast:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/wordCountServer.dir/build.make pkg/CMakeFiles/wordCountServer.dir/build
+.PHONY : wordCountServer/fast
+
+# Convenience name for target.
 pkg/CMakeFiles/_catkin_empty_exported_target.dir/rule:
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/_catkin_empty_exported_target.dir/rule
 .PHONY : pkg/CMakeFiles/_catkin_empty_exported_target.dir/rule
@@ -346,6 +361,21 @@ pkg_genpy: pkg/CMakeFiles/pkg_genpy.dir/rule
 pkg_genpy/fast:
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/pkg_genpy.dir/build.make pkg/CMakeFiles/pkg_genpy.dir/build
 .PHONY : pkg_genpy/fast
+
+# Convenience name for target.
+pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 pkg/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
@@ -453,34 +483,19 @@ pkg_gencpp/fast:
 .PHONY : pkg_gencpp/fast
 
 # Convenience name for target.
-pkg/CMakeFiles/_pkg_generate_messages_check_deps_msgs.dir/rule:
-	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/_pkg_generate_messages_check_deps_msgs.dir/rule
-.PHONY : pkg/CMakeFiles/_pkg_generate_messages_check_deps_msgs.dir/rule
+pkg/CMakeFiles/_pkg_generate_messages_check_deps_wordCount.dir/rule:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/_pkg_generate_messages_check_deps_wordCount.dir/rule
+.PHONY : pkg/CMakeFiles/_pkg_generate_messages_check_deps_wordCount.dir/rule
 
 # Convenience name for target.
-_pkg_generate_messages_check_deps_msgs: pkg/CMakeFiles/_pkg_generate_messages_check_deps_msgs.dir/rule
+_pkg_generate_messages_check_deps_wordCount: pkg/CMakeFiles/_pkg_generate_messages_check_deps_wordCount.dir/rule
 
-.PHONY : _pkg_generate_messages_check_deps_msgs
+.PHONY : _pkg_generate_messages_check_deps_wordCount
 
 # fast build rule for target.
-_pkg_generate_messages_check_deps_msgs/fast:
-	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/_pkg_generate_messages_check_deps_msgs.dir/build.make pkg/CMakeFiles/_pkg_generate_messages_check_deps_msgs.dir/build
-.PHONY : _pkg_generate_messages_check_deps_msgs/fast
-
-# Convenience name for target.
-pkg/CMakeFiles/talker.dir/rule:
-	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/talker.dir/rule
-.PHONY : pkg/CMakeFiles/talker.dir/rule
-
-# Convenience name for target.
-talker: pkg/CMakeFiles/talker.dir/rule
-
-.PHONY : talker
-
-# fast build rule for target.
-talker/fast:
-	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/talker.dir/build.make pkg/CMakeFiles/talker.dir/build
-.PHONY : talker/fast
+_pkg_generate_messages_check_deps_wordCount/fast:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/_pkg_generate_messages_check_deps_wordCount.dir/build.make pkg/CMakeFiles/_pkg_generate_messages_check_deps_wordCount.dir/build
+.PHONY : _pkg_generate_messages_check_deps_wordCount/fast
 
 # Convenience name for target.
 pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
@@ -513,6 +528,36 @@ pkg_generate_messages_eus/fast:
 .PHONY : pkg_generate_messages_eus/fast
 
 # Convenience name for target.
+pkg/CMakeFiles/_pkg_generate_messages_check_deps_msgs.dir/rule:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/_pkg_generate_messages_check_deps_msgs.dir/rule
+.PHONY : pkg/CMakeFiles/_pkg_generate_messages_check_deps_msgs.dir/rule
+
+# Convenience name for target.
+_pkg_generate_messages_check_deps_msgs: pkg/CMakeFiles/_pkg_generate_messages_check_deps_msgs.dir/rule
+
+.PHONY : _pkg_generate_messages_check_deps_msgs
+
+# fast build rule for target.
+_pkg_generate_messages_check_deps_msgs/fast:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/_pkg_generate_messages_check_deps_msgs.dir/build.make pkg/CMakeFiles/_pkg_generate_messages_check_deps_msgs.dir/build
+.PHONY : _pkg_generate_messages_check_deps_msgs/fast
+
+# Convenience name for target.
+pkg/CMakeFiles/talker.dir/rule:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/talker.dir/rule
+.PHONY : pkg/CMakeFiles/talker.dir/rule
+
+# Convenience name for target.
+talker: pkg/CMakeFiles/talker.dir/rule
+
+.PHONY : talker
+
+# fast build rule for target.
+talker/fast:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/talker.dir/build.make pkg/CMakeFiles/talker.dir/build
+.PHONY : talker/fast
+
+# Convenience name for target.
 pkg/CMakeFiles/pkg_generate_messages_lisp.dir/rule:
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/pkg_generate_messages_lisp.dir/rule
 .PHONY : pkg/CMakeFiles/pkg_generate_messages_lisp.dir/rule
@@ -526,36 +571,6 @@ pkg_generate_messages_lisp: pkg/CMakeFiles/pkg_generate_messages_lisp.dir/rule
 pkg_generate_messages_lisp/fast:
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/pkg_generate_messages_lisp.dir/build.make pkg/CMakeFiles/pkg_generate_messages_lisp.dir/build
 .PHONY : pkg_generate_messages_lisp/fast
-
-# Convenience name for target.
-pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-pkg/CMakeFiles/listener.dir/rule:
-	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/listener.dir/rule
-.PHONY : pkg/CMakeFiles/listener.dir/rule
-
-# Convenience name for target.
-listener: pkg/CMakeFiles/listener.dir/rule
-
-.PHONY : listener
-
-# fast build rule for target.
-listener/fast:
-	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/listener.dir/build.make pkg/CMakeFiles/listener.dir/build
-.PHONY : listener/fast
 
 # Convenience name for target.
 pkg/CMakeFiles/pkg_generate_messages_nodejs.dir/rule:
@@ -588,6 +603,51 @@ pkg_gennodejs/fast:
 .PHONY : pkg_gennodejs/fast
 
 # Convenience name for target.
+pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+pkg/CMakeFiles/listener.dir/rule:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/listener.dir/rule
+.PHONY : pkg/CMakeFiles/listener.dir/rule
+
+# Convenience name for target.
+listener: pkg/CMakeFiles/listener.dir/rule
+
+.PHONY : listener
+
+# fast build rule for target.
+listener/fast:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/listener.dir/build.make pkg/CMakeFiles/listener.dir/build
+.PHONY : listener/fast
+
+# Convenience name for target.
+pkg/CMakeFiles/wordCountClient.dir/rule:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/wordCountClient.dir/rule
+.PHONY : pkg/CMakeFiles/wordCountClient.dir/rule
+
+# Convenience name for target.
+wordCountClient: pkg/CMakeFiles/wordCountClient.dir/rule
+
+.PHONY : wordCountClient
+
+# fast build rule for target.
+wordCountClient/fast:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/wordCountClient.dir/build.make pkg/CMakeFiles/wordCountClient.dir/build
+.PHONY : wordCountClient/fast
+
+# Convenience name for target.
 pkg/CMakeFiles/pkg_genlisp.dir/rule:
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/pkg_genlisp.dir/rule
 .PHONY : pkg/CMakeFiles/pkg_genlisp.dir/rule
@@ -616,21 +676,6 @@ pkg_generate_messages_py: pkg/CMakeFiles/pkg_generate_messages_py.dir/rule
 pkg_generate_messages_py/fast:
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/pkg_generate_messages_py.dir/build.make pkg/CMakeFiles/pkg_generate_messages_py.dir/build
 .PHONY : pkg_generate_messages_py/fast
-
-# Convenience name for target.
-pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
 
 src/listener.o: src/listener.cpp.o
 
@@ -686,6 +731,60 @@ src/talker.cpp.s:
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/talker.dir/build.make pkg/CMakeFiles/talker.dir/src/talker.cpp.s
 .PHONY : src/talker.cpp.s
 
+src/wordCountClient.o: src/wordCountClient.cpp.o
+
+.PHONY : src/wordCountClient.o
+
+# target to build an object file
+src/wordCountClient.cpp.o:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/wordCountClient.dir/build.make pkg/CMakeFiles/wordCountClient.dir/src/wordCountClient.cpp.o
+.PHONY : src/wordCountClient.cpp.o
+
+src/wordCountClient.i: src/wordCountClient.cpp.i
+
+.PHONY : src/wordCountClient.i
+
+# target to preprocess a source file
+src/wordCountClient.cpp.i:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/wordCountClient.dir/build.make pkg/CMakeFiles/wordCountClient.dir/src/wordCountClient.cpp.i
+.PHONY : src/wordCountClient.cpp.i
+
+src/wordCountClient.s: src/wordCountClient.cpp.s
+
+.PHONY : src/wordCountClient.s
+
+# target to generate assembly for a file
+src/wordCountClient.cpp.s:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/wordCountClient.dir/build.make pkg/CMakeFiles/wordCountClient.dir/src/wordCountClient.cpp.s
+.PHONY : src/wordCountClient.cpp.s
+
+src/wordCountServer.o: src/wordCountServer.cpp.o
+
+.PHONY : src/wordCountServer.o
+
+# target to build an object file
+src/wordCountServer.cpp.o:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/wordCountServer.dir/build.make pkg/CMakeFiles/wordCountServer.dir/src/wordCountServer.cpp.o
+.PHONY : src/wordCountServer.cpp.o
+
+src/wordCountServer.i: src/wordCountServer.cpp.i
+
+.PHONY : src/wordCountServer.i
+
+# target to preprocess a source file
+src/wordCountServer.cpp.i:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/wordCountServer.dir/build.make pkg/CMakeFiles/wordCountServer.dir/src/wordCountServer.cpp.i
+.PHONY : src/wordCountServer.cpp.i
+
+src/wordCountServer.s: src/wordCountServer.cpp.s
+
+.PHONY : src/wordCountServer.s
+
+# target to generate assembly for a file
+src/wordCountServer.cpp.s:
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build && $(MAKE) -f pkg/CMakeFiles/wordCountServer.dir/build.make pkg/CMakeFiles/wordCountServer.dir/src/wordCountServer.cpp.s
+.PHONY : src/wordCountServer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -694,6 +793,8 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_cpp"
@@ -704,38 +805,45 @@ help:
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... install"
+	@echo "... wordCountServer"
 	@echo "... _catkin_empty_exported_target"
 	@echo "... pkg_genpy"
+	@echo "... rebuild_cache"
+	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... pkg_generate_messages_cpp"
 	@echo "... edit_cache"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_py"
-	@echo "... list_install_components"
 	@echo "... pkg_generate_messages"
 	@echo "... pkg_gencpp"
-	@echo "... _pkg_generate_messages_check_deps_msgs"
-	@echo "... talker"
+	@echo "... _pkg_generate_messages_check_deps_wordCount"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... pkg_generate_messages_eus"
+	@echo "... _pkg_generate_messages_check_deps_msgs"
+	@echo "... talker"
 	@echo "... pkg_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... listener"
 	@echo "... pkg_generate_messages_nodejs"
 	@echo "... pkg_gennodejs"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... listener"
+	@echo "... wordCountClient"
 	@echo "... pkg_genlisp"
 	@echo "... pkg_generate_messages_py"
 	@echo "... test"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... rebuild_cache"
 	@echo "... src/listener.o"
 	@echo "... src/listener.i"
 	@echo "... src/listener.s"
 	@echo "... src/talker.o"
 	@echo "... src/talker.i"
 	@echo "... src/talker.s"
+	@echo "... src/wordCountClient.o"
+	@echo "... src/wordCountClient.i"
+	@echo "... src/wordCountClient.s"
+	@echo "... src/wordCountServer.o"
+	@echo "... src/wordCountServer.i"
+	@echo "... src/wordCountServer.s"
 .PHONY : help
 
 

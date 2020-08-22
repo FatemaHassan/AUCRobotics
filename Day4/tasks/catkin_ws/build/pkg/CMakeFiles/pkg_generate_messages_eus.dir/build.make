@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build
 include pkg/CMakeFiles/pkg_generate_messages_eus.dir/progress.make
 
 pkg/CMakeFiles/pkg_generate_messages_eus: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/msg/msgs.l
+pkg/CMakeFiles/pkg_generate_messages_eus: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/srv/wordCount.l
 pkg/CMakeFiles/pkg_generate_messages_eus: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/srv/servs.l
 pkg/CMakeFiles/pkg_generate_messages_eus: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/manifest.l
 
@@ -63,17 +64,23 @@ pkg/CMakeFiles/pkg_generate_messages_eus: /home/fatema/Documents/AUCRobotics/Day
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from pkg/msgs.msg"
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg/msgs.msg -Ipkg:/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pkg -o /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/msg
 
+/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/srv/wordCount.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/srv/wordCount.l: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/wordCount.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from pkg/wordCount.srv"
+	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/wordCount.srv -Ipkg:/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pkg -o /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/srv
+
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/srv/servs.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/srv/servs.l: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/servs.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from pkg/servs.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from pkg/servs.srv"
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/servs.srv -Ipkg:/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pkg -o /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/srv
 
 /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for pkg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp manifest code for pkg"
 	cd /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/build/pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg pkg std_msgs
 
 pkg_generate_messages_eus: pkg/CMakeFiles/pkg_generate_messages_eus
 pkg_generate_messages_eus: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/msg/msgs.l
+pkg_generate_messages_eus: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/srv/wordCount.l
 pkg_generate_messages_eus: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/srv/servs.l
 pkg_generate_messages_eus: /home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/roseus/ros/pkg/manifest.l
 pkg_generate_messages_eus: pkg/CMakeFiles/pkg_generate_messages_eus.dir/build.make
