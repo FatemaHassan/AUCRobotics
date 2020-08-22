@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pkg_generate_messages_nodejs"
+  "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/gennodejs/ros/pkg/msg/complexMsg.js"
   "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/gennodejs/ros/pkg/msg/msgs.js"
   "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/gennodejs/ros/pkg/srv/wordCount.js"
   "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/devel/share/gennodejs/ros/pkg/srv/servs.js"

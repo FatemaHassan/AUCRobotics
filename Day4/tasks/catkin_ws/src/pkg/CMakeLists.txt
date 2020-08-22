@@ -51,7 +51,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
    FILES
    msgs.msg
-#   Message2.msg
+   complexMsg.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -221,3 +221,13 @@ add_dependencies(wordCountServer pkg_gencpp)
 add_executable(wordCountClient src/wordCountClient.cpp)
 target_link_libraries(wordCountClient ${catkin_LIBRARIES})
 add_dependencies(wordCountClient pkg_gencpp)
+
+add_executable(complexTalker src/complexTalker.cpp)
+target_link_libraries(complexTalker ${catkin_LIBRARIES})
+add_dependencies(complexTalker pkg_generate_messages_cpp)
+
+add_executable(complexListener src/complexListener.cpp)
+target_link_libraries(complexListener ${catkin_LIBRARIES})
+add_dependencies(complexListener pkg_generate_messages_cpp)
+
+

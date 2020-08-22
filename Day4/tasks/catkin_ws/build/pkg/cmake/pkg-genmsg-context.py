@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg/msgs.msg"
+messages_str = "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg/msgs.msg;/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg/complexMsg.msg"
 services_str = "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/servs.srv;/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/srv/wordCount.srv"
 pkg_name = "pkg"
 dependencies_str = "std_msgs"

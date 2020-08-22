@@ -38,7 +38,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pkg/msg" TYPE FILE FILES "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg/msgs.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pkg/msg" TYPE FILE FILES
+    "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg/msgs.msg"
+    "/home/fatema/Documents/AUCRobotics/Day4/tasks/catkin_ws/src/pkg/msg/complexMsg.msg"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
