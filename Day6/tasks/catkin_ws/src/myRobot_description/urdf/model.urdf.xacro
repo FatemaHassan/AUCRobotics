@@ -48,6 +48,12 @@
 
     <link name="${prefix}_${suffix}_wheel">
       <visual>
+	<kp>1000000.0</kp> <!-- kp and kd for rubber -->
+	<kd>100.0</kd>
+	<mu1>1.0</mu1>
+	<mu2>1.0</mu2>
+	<maxVel>1.0</maxVel>
+	<minDepth>0.00</minDepth>
         <origin xyz="0 0 0" rpy="${pi/2} 0 0" />
         <geometry>
           <cylinder radius="${wheeldiam/2}" length="0.1"/>
@@ -152,7 +158,7 @@
 <gazebo reference="hokuyo_link">
     <sensor type="gpu_ray" name="head_hokuyo_sensor">
       <pose>0 0 0 0 0 0</pose>
-      <visualize>true</visualize>
+      <visualize>false</visualize>
       <update_rate>40</update_rate>
       <ray>
         <scan>
@@ -269,5 +275,23 @@
       </plugin>
     </sensor>
   </gazebo>
+
+<gazebo>
+  <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+    <updateRate>100.0</updateRate>
+    <robotNamespace>/</robotNamespace>
+    <leftFrontJoint>left_front_wheel_joint</leftFrontJoint>
+    <rightFrontJoint>right_front_wheel_joint</rightFrontJoint>
+    <leftRearJoint>left_back_wheel_joint</leftRearJoint>
+    <rightRearJoint>right_back_wheel_joint</rightRearJoint>
+    <wheelSeparation>0.2</wheelSeparation>
+    <wheelDiameter>0.07</wheelDiameter>
+    <robotBaseFrame>base_link</robotBaseFrame>
+    <torque>20</torque>
+    <topicName>cmd_vel</topicName>
+    <broadcastTF>true</broadcastTF>
+  </plugin>
+
+</gazebo>
 
 </robot>

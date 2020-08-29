@@ -1,2 +1,2 @@
-
+myRobot_description:myRobot_gazebo
 -DCATKIN_DEVEL_PREFIX=/home/fatema/Documents/AUCRobotics/Day6/tasks/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/fatema/Documents/AUCRobotics/Day6/tasks/catkin_ws/install -G Unix Makefiles

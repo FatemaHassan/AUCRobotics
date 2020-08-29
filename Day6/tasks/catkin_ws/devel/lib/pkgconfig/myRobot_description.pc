@@ -1,0 +1,8 @@
+prefix=/home/fatema/Documents/AUCRobotics/Day6/tasks/catkin_ws/devel
+
+Name: myRobot_description
+Description: Description of myRobot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

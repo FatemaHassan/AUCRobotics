@@ -1,0 +1,8 @@
+prefix=/home/fatema/Documents/AUCRobotics/Day6/tasks/catkin_ws/install
+
+Name: myRobot_gazebo
+Description: Description of myRobot_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
